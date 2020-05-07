@@ -2,7 +2,7 @@ view: new_flight_pdt {
   derived_table: {
     distribution_style: all
     publish_as_db_view: yes
-    sql_trigger_value: SELECT CURRENT_DATE ;;
+    sql_trigger_value: SELECT DATE_PART('hour', GETDATE()) ;;
     sql: SELECT
         flights.flight_num  AS "flight_num",
         DATE(CONVERT_TIMEZONE('America/Los_Angeles', 'America/New_York', flights.arr_time )) AS "arr_date",
