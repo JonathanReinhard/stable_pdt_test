@@ -10,6 +10,8 @@ datagroup: test_stable_pdt_redshift_default_datagroup {
 
 persist_with: test_stable_pdt_redshift_default_datagroup
 
+explore: new_flight_pdt {}
+
 explore: accidents {}
 
 explore: aircraft {}

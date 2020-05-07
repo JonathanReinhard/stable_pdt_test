@@ -1,5 +1,6 @@
 view: new_flight_pdt {
   derived_table: {
+    distribution_style: all
     publish_as_db_view: yes
     sql_trigger_value: SELECT CURRENT_DATE ;;
     sql: SELECT
